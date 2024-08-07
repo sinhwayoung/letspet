@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #fff;
+  font-size: 16px;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrap {
+  width: 100%;
+}
+.bodywrap {
+  position: relative;
+  width: 100%;
+  /* height: 850px; */
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #f0f0f0; */
+}
+
+/* 헤더 */
+
+header {
+  padding: 10px 0;
+  background-color: #fff;
+  color: #111;
+  border-bottom: solid 1px #767676;
+}
+
+.container {
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+.logo {
+  position: relative;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  /* padding-left: 70px; */
+  font-size: 28px;
+  font-weight: bold;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-left: 70px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+/* navi */
+.menu {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  z-index: 1;
+}
+/* navi */
+.navi {
+  position: relative;
+  display: flex;
+  margin-left: 73px;
+}
+.navi > li {
+  position: relative;
+}
+.navi > li > a {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  transition: all 0.5s;
+}
+.navi > li > a:hover {
+  background-color: #4300d1;
+  color: #fff;
+}
+/* submenu */
+.submenu {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.submenu li {
+  position: relative;
+}
+.submenu a {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.5s;
+}
+.navi > li:hover .submenu {
+  height: 160px;
+}
+.submenu a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  gap: 32px;
+}
+
+.icon li:first-child {
+  margin-left: 50px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 30px;
+  padding: 1px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #aaa;
+  border-radius: 100px;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  border: none;
+  margin-left: 20px;
+}
+
+.search-form input[type="image"] {
+  width: 24px; /* 이미지의 너비 */
+  height: 24px; /* 이미지의 높이 */
+  border: none; /* 기본 테두리 제거 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+  margin-right: 20px;
+}
+
+/* main */
+
+main {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.main-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoname {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 150px;
+}
+.login {
+  margin-top: 50px;
+}
+
+.login-form {
+  position: relative;
+  width: 340px;
+  height: 36px;
+  border: solid 1px #767676;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 12px;
+}
+.login-form input[type="text"] {
+  border: none;
+  font-size: 12px;
+}
+/* .email {
+  position: relative;
+  width: 340px;
+  height: 36px;
+  border: solid 1px #767676;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.paw {
+  position: relative;
+  width: 340px;
+  height: 36px;
+  border: solid 1px #767676;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 12px;
+} */
+
+.log {
+  position: relative;
+  width: 340px;
+  height: 36px;
+  border: solid 1px #4300d1;
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #4300d1;
+}
+
+.text {
+  position: relative;
+  width: 340px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.text-2 {
+  color: #4300d1;
+}
+.text-3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sns {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 30px;
+}
+.naver img {
+  width: 40px;
+  height: 40px;
+}
+.insta img {
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="javascript/jquery-1.12.3.js" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // 아이콘을 클릭했을 때 실행될 함수
+        $(".icon").click(function () {
+          // 클릭된 아이콘의 data-icon 속성을 가져옵니다.
+          var newIconClass = $(this).data("icon");
+
+          // 모든 아이콘에서 active 클래스를 제거합니다.
+          $(".icon").removeClass("active");
+
+          // 클릭된 아이콘에 active 클래스를 추가합니다.
+          $(this).addClass("active");
+
+          // 모든 아이콘의 클래스를 초기화합니다.
+          $(".icon").each(function () {
+            $(this)
+              .removeClass()
+              .addClass("icon " + $(this).data("icon"));
+          });
+
+          // 클릭된 아이콘의 클래스를 변경하여 다른 아이콘으로 설정합니다.
+          $(this)
+            .removeClass()
+            .addClass("icon " + newIconClass);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="icon-container">
+      <i class="fas fa-heart icon" data-icon="fas fa-heart"></i>
+      <i class="far fa-heart icon" data-icon="far fa-heart"></i>
+      <i class="fas fa-star icon" data-icon="fas fa-star"></i>
+      <i class="far fa-star icon" data-icon="far fa-star"></i>
+    </div>
+    <!-- jQuery 라이브러리를 로드합니다. -->
+  </body>
+</html>
