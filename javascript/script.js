@@ -46,3 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+const swiper = new Swiper(".swiper-container", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // Swiper 옵션 추가 가능
+});

@@ -189,6 +189,20 @@ header {
   object-fit: cover;
 }
 
+/* 버튼 hover 시 색상 변경 */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #cbf43b; /* hover 시 다른 색상으로 변경 */
+}
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+}
+
 /* main */
 
 /* category */
@@ -461,15 +475,46 @@ main {
   border: 0;
   margin: 0 auto;
   font-size: 30px;
+  animation: slide-left 30s linear infinite;
 }
 
-@keyframes slide {
+/* @keyframes slide-left {
   0% {
     transform: translateX(0);
-  } /* 초기 위치 */
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Move to the left by the width of the slides container */
+
+.loop-container {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #000000; /* 원하는 배경색으로 변경 */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  /* z-index: 20; */
+}
+
+.loop-text {
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  white-space: nowrap;
+  display: inline-block;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
   100% {
     transform: translateX(-100%);
-  } /* 왼쪽으로 이동*/
+  }
 }
 
 .contents {
