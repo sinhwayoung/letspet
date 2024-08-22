@@ -1,0 +1,137 @@
+/* Mobile Devices (up to 600px) */
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .logo {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .logo img {
+    margin: 0 auto;
+  }
+  .navi {
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+  }
+  .navi > li > a {
+    width: 100%;
+  }
+  .search-form {
+    width: 100%;
+  }
+  .category {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  .category ul li {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .category ul li:last-child {
+    margin-bottom: 0;
+  }
+  main {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .sum {
+    flex-direction: column;
+  }
+  .sum img {
+    width: 100%;
+    height: auto;
+  }
+  .contents {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .contents-1,
+  .contents-2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Tablet Devices (up to 1024px) */
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .navi {
+    justify-content: center;
+  }
+  .navi > li > a {
+    width: 120px;
+    font-size: 14px;
+  }
+  .category {
+    height: auto;
+    padding: 40px 0;
+  }
+  .category ul li {
+    margin-right: 40px;
+  }
+  main {
+    width: 90%;
+  }
+  .sum {
+    flex-direction: column;
+  }
+  .sum img {
+    width: 100%;
+    height: auto;
+  }
+  .contents {
+    flex-direction: column;
+  }
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/* Desktop Devices (above 1024px) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0 70px;
+  }
+  .navi {
+    margin-left: 73px;
+  }
+  .category {
+    height: 320px;
+    flex-direction: row;
+  }
+  .sum {
+    flex-direction: row;
+  }
+  .sum img {
+    height: 600px;
+  }
+  .contents {
+    flex-direction: row;
+  }
+}
